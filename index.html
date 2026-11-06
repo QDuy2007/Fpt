@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GONLEFOOD — Pizza nướng tươi</title>
+  <meta name="description" content="GONLEFOOD - Pizza nướng tươi, bột ủ chậm 24 giờ, nguyên liệu chọn lọc mỗi ngày.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</head>
+
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header" id="header">
+    <a href="#home" class="brand">
+      <span class="brand-mark"><i class="fa-solid fa-scissors"></i></span>
+      <span><b>GONLEFOOD</b><small>PIZZA NƯỚNG TƯƠI</small></span>
+    </a>
+
+    <nav class="nav">
+      <a href="#home">Trang chủ</a>
+      <a href="#story">Chất lượng</a>
+      <a href="#menu">Thực đơn</a>
+      <a href="#offers">Ưu đãi</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="search-mini">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="headerSearch" placeholder="Tìm pizza..." aria-label="Tìm pizza">
+      </div>
+      <button class="icon-btn" id="favoritesBtn" title="Yêu thích"><i class="fa-regular fa-heart"></i></button>
+      <button class="icon-btn cart-btn" id="cartBtn" title="Giỏ hàng"><i class="fa-solid fa-bag-shopping"></i><span
+          id="cartCount">0</span></button>
+      <button class="icon-btn" id="accountBtn" title="Tài khoản"><i class="fa-regular fa-user"></i></button>
+      <button class="mobile-menu" id="mobileMenu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">01 · GONLEFOOD</p>
+        <h1>Nóng hổi. Tươi ngon.<br>Tuyệt <em>vời</em>.</h1>
+        <p class="hero-copy">Pizza nướng tươi, làm riêng cho bạn — từ khối bột ủ 24 giờ đến lò than 480°C.</p>
+        <a href="#menu" class="btn btn-primary">Đặt hàng ngay <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <a class="scroll-cue" href="#intro"><span></span><i class="fa-solid fa-arrow-down"></i></a>
+    </section>
+
+    <section class="intro section-dark" id="intro">
+      <div class="intro-line"></div>
+      <h2>Pizza không chỉ là một món ăn.<br>Đó là cách chúng tôi giữ <em>lửa</em> mỗi<br>ngày, và giữ trọn niềm vui
+        cho<br>từng <em>vị khách</em>.</h2>
+      <div class="ghost-symbol">G</div>
+    </section>
+
+    <section class="story story-image section-pad" id="story">
+      <div class="story-photo"></div>
+      <div class="story-content reveal">
+        <p class="eyebrow">02 · CÂU CHUYỆN</p>
+        <h2>Mỗi chế biến,<br>phục vụ <em>nóng</em><br><em>hổi</em></h2>
+        <p>Từ năm 2019, GONLEFOOD nướng pizza trong lò than củi, dùng bột ủ chậm và chọn nguyên liệu tươi từng buổi
+          sáng.</p>
+        <ul class="check-list">
+          <li><span>—</span> Bột ủ chậm tròn 24 giờ</li>
+          <li><span>—</span> Phô mai và rau củ nhập mỗi sáng</li>
+          <li><span>—</span> Đội ngũ đầu bếp nướng bánh trực tiếp</li>
+        </ul>
+        <div class="stats">
+          <div><b>50.000+</b><small>Đơn hàng đã phục vụ</small></div>
+          <div><b>4.9</b><small>Điểm đánh giá trung bình</small></div>
+          <div><b>20+</b><small>Công thức pizza</small></div>
+          <div><b>30 phút</b><small>Thời gian giao hàng</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu section-pad" id="menu">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">03 · THỰC ĐƠN · GONLEFOOD</p>
+          <h2>Chọn chiếc pizza<br>của <em>bạn</em></h2>
+          <p class="muted">Tám công thức được nướng mỗi ngày trong lò than củi. Lọc theo khẩu vị, xem nhanh thành phần,
+            rồi thêm vào giỏ chỉ với một cú nhấp.</p>
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all">Tất cả</button>
+          <button class="filter" data-filter="meat">Thịt</button>
+          <button class="filter" data-filter="seafood">Hải sản</button>
+          <button class="filter" data-filter="chicken">Gà</button>
+          <button class="filter" data-filter="cheese">Phô mai</button>
+          <button class="filter" data-filter="veg">Chay</button>
+          <button class="filter" data-filter="spicy">Cay</button>
+          <button class="filter" data-filter="special">Đặc biệt</button>
+        </div>
+        <div class="menu-tools">
+          <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="menuSearch"
+              placeholder="Tìm pizza..."></div>
+          <select id="sortSelect">
+            <option value="popular">Phổ biến nhất</option>
+            <option value="price-low">Giá thấp → cao</option>
+            <option value="price-high">Giá cao → thấp</option>
+            <option value="rating">Đánh giá cao</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="menu-meta"><span id="resultCount">8 món phù hợp</span><span>Phổ biến nhất</span></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="offers section-pad" id="offers">
+      <div class="offer-bg"></div>
+      <div class="offer-content">
+        <p class="eyebrow">04 · ƯU ĐÃI TUẦN NÀY</p>
+        <h2>Ưu đãi kết thúc sau<br><em>tích tắc</em></h2>
+        <p class="muted">Sao chép mã bên dưới và dán vào bước thanh toán. Mỗi mã áp dụng một lần cho mỗi đơn hàng.</p>
+        <div class="countdown" id="countdown">
+          <div><b id="days">00</b><small>NGÀY</small></div>
+          <div><b id="hours">00</b><small>GIỜ</small></div>
+          <div><b id="minutes">00</b><small>PHÚT</small></div>
+          <div><b id="seconds">00</b><small>GIÂY</small></div>
+        </div>
+      </div>
+      <div class="offer-grid">
+        <article class="offer-card">
+          <div class="offer-image img-1"></div><span class="tag">HOT</span>
+          <div class="offer-body">
+            <h3>Mua 1 tặng 1</h3>
+            <p>Áp dụng cho mọi pizza size L vào thứ Ba và thứ Tư hàng tuần.</p><button class="coupon"
+              data-code="GONLE1T1">GONLE1T1 <span>Sao chép mã</span></button>
+          </div>
+        </article>
+        <article class="offer-card">
+          <div class="offer-image img-2"></div><span class="tag">TIẾT KIỆM</span>
+          <div class="offer-body">
+            <h3>Combo Pizza + Nước</h3>
+            <p>Một pizza vừa cùng hai lon nước ngọt ướp lạnh, tiết kiệm 60.000đ.</p><button class="coupon"
+              data-code="GONLECOMBO">GONLECOMBO <span>Sao chép mã</span></button>
+          </div>
+        </article>
+        <article class="offer-card">
+          <div class="offer-image img-3"></div><span class="tag">GIA ĐÌNH</span>
+          <div class="offer-body">
+            <h3>Combo gia đình</h3>
+            <p>Ba pizza lớn, một salad và bốn nước, đủ cho cả nhà.</p><button class="coupon"
+              data-code="GONLEFAMILY">GONLEFAMILY <span>Sao chép mã</span></button>
+          </div>
+        </article>
+        <article class="offer-card">
+          <div class="offer-image img-4"></div><span class="tag">SINH VIÊN</span>
+          <div class="offer-body">
+            <h3>Ưu đãi sinh viên</h3>
+            <p>Giảm 20% khi xuất trình thẻ sinh viên, từ 14:00 đến 17:00.</p><button class="coupon"
+              data-code="GONLESTUDENT">GONLESTUDENT <span>Sao chép mã</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="contact-bg"></div>
+      <div class="contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow">05 · GHÉ THĂM CHÚNG TÔI</p>
+          <h2>Ghé cửa hàng<br>hoặc gọi <em>một<br>cuộc</em></h2>
+          <p>Đặt tiệc, đặt bàn hay chỉ muốn hỏi hôm nay đầu bếp nướng gì — chúng tôi luôn ở đây.</p>
+          <div class="contact-info">
+            <span><i class="fa-solid fa-location-dot"></i> 128 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</span>
+            <span><i class="fa-solid fa-phone"></i> 1900 6868</span>
+            <span><i class="fa-solid fa-envelope"></i> hello@gonlefood.vn</span>
+            <span><i class="fa-regular fa-clock"></i> 10:00 – 23:00 · Tất cả các ngày</span>
+          </div>
+          <div class="map-placeholder">
+            <div><i class="fa-solid fa-location-dot"></i><b>GONLEFOOD</b><small>128 Nguyễn Huệ · Quận 1</small></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-grid">
+            <label>HỌ VÀ TÊN<input required placeholder="Nguyễn Minh Anh"></label>
+            <label>ĐIỆN THOẠI<input required placeholder="090 123 4567"></label>
+          </div>
+          <label>EMAIL<input type="email" required placeholder="ban@email.com"></label>
+          <label>TIN NHẮN<textarea required maxlength="500"
+              placeholder="Bạn muốn đặt tiệc, đặt bàn hay góp ý cho chúng tôi?"></textarea></label>
+          <button class="btn btn-primary" type="submit">Gửi tin nhắn <i class="fa-solid fa-paper-plane"></i></button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="tracking section-pad" id="tracking">
+      <div class="tracking-bg"></div>
+      <div class="tracking-inner">
+        <p class="eyebrow">06 · THEO DÕI ĐƠN HÀNG</p>
+        <h2>Đơn của bạn đang ở <em>đâu</em>?</h2>
+        <p class="muted">Nhập mã đơn để xem tiến độ nướng bánh và thời gian giao dự kiến.</p>
+        <div class="track-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="orderInput" placeholder="VD: GNLE-2481">
+          <button class="btn btn-primary" id="trackBtn">Tra cứu <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="demo-codes">Mã demo: <button data-order="GNLE-2481">GNLE-2481</button><button
+            data-order="GNLE-1042">GNLE-1042</button><button data-order="GNLE-3050">GNLE-3050</button><button
+            data-order="GNLE-7777">GNLE-7777</button></div>
+
+        <div class="order-card" id="orderCard">
+          <div class="order-top">
+            <div><small>MÃ ĐƠN HÀNG</small><b id="orderId">GNLE-2481</b></div>
+            <div><small>TRẠNG THÁI</small><strong id="orderStatus">Đang giao</strong></div>
+            <div><small>DỰ KIẾN GIAO</small><strong id="orderEta">19:04</strong></div>
+            <div><small>TÀI XẾ</small><strong id="orderDriver">Trần Minh Quân</strong></div>
+            <div><small>TỔNG TIỀN</small><strong id="orderTotal">777.000đ</strong></div>
+          </div>
+          <div class="progress-line"><span id="orderProgress"></span></div>
+          <div class="steps" id="orderSteps">
+            <div class="done"><i class="fa-solid fa-check"></i><b>Đã xác nhận</b><small>18:24</small>
+              <p>GONLEFOOD đã nhận đơn và xác nhận thanh toán.</p>
+            </div>
+            <div class="done"><i class="fa-solid fa-utensils"></i><b>Chuẩn bị</b><small>18:31</small>
+              <p>Nhào bột ủ 24 giờ, phết sốt và rải nguyên liệu tươi.</p>
+            </div>
+            <div class="done"><i class="fa-solid fa-fire"></i><b>Nướng</b><small>18:39</small>
+              <p>Vào lò than củi 480°C, chín trong đúng 90 giây.</p>
+            </div>
+            <div class="current"><i class="fa-solid fa-motorcycle"></i><b>Đang giao</b><small>18:52</small>
+              <p>Tài xế đang trên đường tới địa chỉ của bạn.</p>
+            </div>
+            <div><i class="fa-solid fa-house"></i><b>Đã giao</b><small>Dự kiến 19:04</small>
+              <p>Giao tận tay. Chúc bạn ngon miệng!</p>
+            </div>
+          </div>
+          <div class="order-bottom"><span id="orderSummary"><i class="fa-solid fa-box"></i> 2× Đặc biệt GNLE · 1× Người
+              yêu phô mai · 2× Coca lạnh</span><span id="orderAddress"><i class="fa-solid fa-location-dot"></i> 128
+              Nguyễn Huệ, Quận 1</span><button class="outline-btn"><i class="fa-solid fa-phone"></i> Gọi tài xế</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signup section-pad" id="signup">
+      <div class="signup-wrap reveal">
+        <div class="signup-copy">
+          <p class="eyebrow">07 · ĐĂNG KÝ THÀNH VIÊN</p>
+          <h2>Nhận ưu đãi <em>độc quyền</em><br>và pizza mới mỗi tuần</h2>
+          <p>Hãy đăng ký để nhận mã giảm, món mới, và cập nhật khuyến mãi từ GONLEFOOD mỗi khi lò than bắt đầu nướng.
+          </p>
+          <ul class="benefits">
+            <li><i class="fa-solid fa-percent"></i> Giảm 10% cho đơn đầu tiên</li>
+            <li><i class="fa-solid fa-gift"></i> Ưu đãi sinh nhật & combo đặc biệt</li>
+            <li><i class="fa-solid fa-clock"></i> Tự động lưu thông tin đặt hàng nhanh hơn</li>
+          </ul>
+        </div>
+
+        <form class="signup-form" id="signupForm">
+          <label>HỌ VÀ TÊN<input required placeholder="Nguyễn Minh Anh"></label>
+          <label>EMAIL<input type="email" required placeholder="ban@email.com"></label>
+          <label>SỐ ĐIỆN THOẠI<input required placeholder="090 123 4567"></label>
+          <button class="btn btn-primary" type="submit">Đăng ký ngay <i class="fa-solid fa-arrow-right"></i></button>
+          <p class="form-note" id="signupNote"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#home" class="brand"><span class="brand-mark"><i
+              class="fa-solid fa-scissors"></i></span><span><b>GONLEFOOD</b></span></a>
+        <p>“Pizza tươi ngon. Mọi người hạnh phúc.”<br>Nướng bằng lò than củi, phục vụ nóng hổi mỗi ngày.</p>
+        <div class="socials"><a href="#"><i class="fa-brands fa-facebook"></i></a><a href="#"><i
+              class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-tiktok"></i></a></div>
+      </div>
+      <div>
+        <h4>Liên kết nhanh</h4><a href="#home">Trang chủ</a><a href="#story">Về GONLEFOOD</a><a href="#offers">Ưu
+          đãi</a><a href="#contact">Ghé cửa hàng</a>
+      </div>
+      <div>
+        <h4>Thực đơn</h4><a href="#menu">Pizza bán chạy</a><a href="#menu">Pizza chay</a><a href="#menu">Hải sản cao
+          cấp</a><a href="#story">Lò than & nguyên liệu</a>
+      </div>
+      <div>
+        <h4>Chăm sóc khách hàng</h4><a href="#tracking">Theo dõi đơn hàng</a><a href="#">Chính sách giao hàng</a><a
+          href="#">Đổi trả & hoàn tiền</a><a href="#">Câu hỏi thường gặp</a><a href="tel:19006868">1900 6868</a><a
+          href="mailto:hello@gonlefood.vn">hello@gonlefood.vn</a>
+      </div>
+    </div>
+    <div class="newsletter">
+      <div>
+        <h4>Nhận bản tin</h4>
+        <p>Ưu đãi chớp nhoáng và pizza mới ra lò — gửi thẳng vào hộp thư của bạn.</p>
+      </div>
+      <form id="newsletterForm"><input type="email" required placeholder="Địa chỉ email của bạn"><button
+          class="btn btn-primary">Đăng ký</button></form>
+    </div>
+    <div class="footer-bottom"><span>© 2026 GONLEFOOD. Mọi quyền được bảo lưu.</span><span>128 Nguyễn Huệ, Quận 1, TP.
+        Hồ Chí Minh</span></div>
+  </footer>
+
+  <button class="back-top" id="backTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="drawer-head">
+      <h3>Giỏ hàng</h3><button id="closeCart"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Giỏ hàng đang trống. Con người vẫn chưa phát minh ra pizza tự thêm vào giỏ, tiếc thật.</p>
+    </div>
+    <div class="drawer-foot">
+      <div><span>Tạm tính</span><b id="cartTotal">0đ</b></div><button class="btn btn-primary" id="checkoutBtn">Thanh
+        toán <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <div class="modal" id="favoritesModal">
+    <div class="modal-box favorites-box">
+      <button class="modal-close" data-close="favoritesModal"><i class="fa-solid fa-xmark"></i></button>
+      <p class="eyebrow">YÊU THÍCH</p>
+      <h2>Pizza bạn đã <em>ưu thích</em></h2>
+      <div class="favorites-list" id="favoritesList"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="productModal">
+    <div class="modal-box">
+      <button class="modal-close" data-close="productModal"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="checkoutModal">
+    <div class="modal-box checkout-box">
+      <button class="modal-close" data-close="checkoutModal"><i class="fa-solid fa-xmark"></i></button>
+      <p class="eyebrow">THANH TOÁN</p>
+      <h2>Hoàn tất <em>đơn hàng</em></h2>
+      <form id="checkoutForm">
+        <div class="form-grid"><label>HỌ VÀ TÊN<input required></label><label>ĐIỆN THOẠI<input required></label></div>
+        <label>ĐỊA CHỈ GIAO HÀNG<input required></label>
+        <label>GHI CHÚ<textarea placeholder="Ví dụ: giao sau 18:00..."></textarea></label>
+        <button class="btn btn-primary">Đặt hàng <i class="fa-solid fa-check"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal auth-modal" id="authModal">
+    <div class="modal-box auth-box">
+      <button class="modal-close" data-close="authModal"><i class="fa-solid fa-xmark"></i></button>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-auth-tab="login" type="button">Đăng nhập</button>
+        <button class="auth-tab" data-auth-tab="register" type="button">Đăng ký</button>
+      </div>
+
+      <div class="auth-panel active" data-auth-panel="login">
+        <p class="eyebrow">TÀI KHOẢN</p>
+        <h2>Chào mừng <em>trở lại</em></h2>
+        <form class="auth-form" id="loginForm">
+          <label>EMAIL<input id="loginEmail" type="email" required placeholder="ban@email.com"></label>
+          <label>MẬT KHẨU<input id="loginPassword" type="password" required placeholder="••••••••"></label>
+          <button class="btn btn-primary" type="submit">Đăng nhập <i class="fa-solid fa-arrow-right"></i></button>
+          <p class="form-note" id="loginNote"></p>
+        </form>
+      </div>
+
+      <div class="auth-panel" data-auth-panel="register">
+        <p class="eyebrow">TÀI KHOẢN</p>
+        <h2>Tạo tài khoản <em>mới</em></h2>
+        <form class="auth-form" id="registerForm">
+          <label>HỌ VÀ TÊN<input id="registerName" required placeholder="Nguyễn Minh Anh"></label>
+          <label>EMAIL<input id="registerEmail" type="email" required placeholder="ban@email.com"></label>
+          <label>SỐ ĐIỆN THOẠI<input id="registerPhone" required placeholder="090 123 4567"></label>
+          <label>MẬT KHẨU<input id="registerPassword" type="password" required placeholder="Nhập mật khẩu"></label>
+          <button class="btn btn-primary" type="submit">Đăng ký ngay <i class="fa-solid fa-arrow-right"></i></button>
+          <p class="form-note" id="registerNote"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
